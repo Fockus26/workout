@@ -1,0 +1,9 @@
+{
+  "name": "Registro de entreno",
+  "short_name": "Entreno",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#111214",
+  "theme_color": "#111214",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}

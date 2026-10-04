@@ -73,7 +73,7 @@ Cada ejercicio tiene **peso**, **series**, un **rango de reps** (o de segundos o
 - Al terminar el ejercicio eliges qué hacer la próxima vez:
   `Mantener` · `+ reps` · `− reps` · `− descanso` · `+ descanso` · `+ peso` · `− peso` · `Subir nivel`
 - **Subir nivel** = sube el peso (o pasa al siguiente nivel de la escalera) y vuelve a lo más fácil: reps al mínimo y descanso al máximo.
-- **Sugerencia automática** (la app la marca, tú decides): si todas las series salieron con RPE ≤ 8 → primero `+ reps` hasta el tope, luego `− descanso` hasta el mínimo, luego `Subir nivel`. Si fallaste reps o una serie llegó a RPE ≥ 9.5 → `Mantener`.
+- **Sugerencia automática** (la app la marca, tú decides): si todas las series salieron con RPE ≤ 8 → primero `+ reps` hasta el tope, luego `− descanso` hasta el mínimo, luego `Subir nivel`. Si faltaron reps o alguna serie pasó de RPE 8 → `Mantener`.
 - Isométricos y carries: primero tiempo o distancia, después peso.
 - Cardio: el "peso" es la velocidad (km/h) y las "reps" son los intervalos o los minutos.
 
