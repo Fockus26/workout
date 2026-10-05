@@ -20,7 +20,7 @@ export const LIFTS: Lift[] = [
   { key: 'gripper', label: 'Gripper 200 lb', unit: 'reps', oneRM: false },
   { key: 'dragon_flag', label: 'Dragon flag', unit: 'nivel', oneRM: false },
   { key: 'carrera', label: 'Carrera 10 min', unit: 'km/h', oneRM: false },
-  { key: 'curl', label: 'Curl mancuerna 20 kg', unit: 'reps', oneRM: false },
+  { key: 'curl', label: 'Curl mancuerna 20 kg', unit: 'reps con 20 kg', oneRM: false },
 ]
 export const liftByKey = (k: string) => LIFTS.find((l) => l.key === k)
 
@@ -33,12 +33,15 @@ export const PR_DAYS: Record<number, { title: string; lifts: string[]; note: str
   5: { title: 'Press militar + Dominadas máx', lifts: ['militar', 'dominadas_max'], note: 'Dominadas: 1 serie estricta, brazos extendidos → barbilla sobre la barra.' },
   6: {
     title: 'Tests de habilidad (en este orden)',
-    lifts: ['oap_negativa', 'archer', 'gripper', 'dragon_flag', 'carrera'],
-    note: 'Negativa: 1 intento por brazo · Gripper: 3 intentos, 3 min de descanso, solo cierres completos · Carrera: 10 min a la velocidad más alta que sostengas.',
+    lifts: ['oap_negativa', 'archer', 'gripper', 'curl', 'dragon_flag', 'carrera'],
+    note: 'Negativa: 1 intento por brazo · Gripper: 3 intentos, 3 min de descanso, solo cierres completos · Curl: calienta 10×10 y 15×3, luego máximo con 20 kg, de pie, sin balanceo · Carrera: 10 min a la velocidad más alta que sostengas.',
   },
 }
 
 const r25 = (n: number) => Math.round(n / 2.5) * 2.5
+/** En barra solo se cargan pares de discos de 2.5: saltos de 5 kg. */
+const r5 = (n: number) => Math.round(n / 5) * 5
+const span = (a: number, b: number) => (a === b ? `${a}` : `${a}–${b}`)
 
 export interface PrPlan {
   warmup: string
@@ -55,13 +58,13 @@ export function prPlan(liftKey: string, est: number): PrPlan {
   }
   if (liftKey === 'hip_thrust') {
     return {
-      warmup: `${r25(est * 0.3)}×8 · ${r25(est * 0.5)}×5 · ${r25(est * 0.7)}×3 · ${r25(est * 0.85)}×1`,
-      attempts: [`${r25(est * 0.925)}`, `${r25(est * 1.01)}–${r25(est * 1.025)}`, `${r25(est * 1.05)}–${r25(est * 1.075)}`],
+      warmup: `${r5(est * 0.3)}×8 · ${r5(est * 0.5)}×5 · ${r5(est * 0.7)}×3 · ${r5(est * 0.85)}×1`,
+      attempts: [`${r5(est * 0.925)}`, span(r5(est * 1.01), r5(est * 1.025)), span(r5(est * 1.05), r5(est * 1.075))],
     }
   }
   return {
-    warmup: `barra×10 · ${r25(est * 0.5)}×5 · ${r25(est * 0.65)}×3 · ${r25(est * 0.8)}×2 · ${r25(est * 0.88)}×1`,
-    attempts: [`${r25(est * 0.94)}`, `${r25(est * 1.01)}–${r25(est * 1.03)}`, `${r25(est * 1.05)}–${r25(est * 1.08)}`],
+    warmup: `barra×10 · ${r5(est * 0.5)}×5 · ${r5(est * 0.65)}×3 · ${r5(est * 0.8)}×2 · ${r5(est * 0.88)}×1`,
+    attempts: [`${r5(est * 0.94)}`, span(r5(est * 1.01), r5(est * 1.03)), span(r5(est * 1.05), r5(est * 1.08))],
   }
 }
 
@@ -73,17 +76,17 @@ export interface Goal {
   /** 1RM que pide la meta (para la barra de progreso). */
   needed?: number
   milestones: string
-  horizon: string
 }
 
 export const GOALS: Goal[] = [
-  { label: 'One arm pull-up ×1', lift: 'oap_negativa', reps: 1, milestones: 'negativa 5 s → 10 s → asistida con toalla ×3', horizon: '6–12 meses' },
-  { label: 'Dragon flag', lift: 'dragon_flag', reps: 1, milestones: 'nivel 5 = el primero · ×5 · ×20 dominado', horizon: '3–6 meses' },
-  { label: 'Gripper 200 lb ×20', lift: 'gripper', reps: 20, milestones: '×3 → ×5 → ×10 → ×20', horizon: '1.5–3 años' },
-  { label: 'Press militar 70 ×5', lift: 'militar', weight: 70, reps: 5, needed: 80, milestones: '60×5 → 65×5', horizon: '9–18 meses' },
-  { label: 'Hip thrust 200 ×10', lift: 'hip_thrust', weight: 200, reps: 10, needed: 265, milestones: '160×10 → 180×10', horizon: '1.5–2.5 años' },
-  { label: 'Press banca 100 ×10', lift: 'banca', weight: 100, reps: 10, needed: 130, milestones: '80×10 → 90×10', horizon: '2–3 años' },
-  { label: 'Peso muerto 150 ×10', lift: 'peso_muerto', weight: 150, reps: 10, needed: 195, milestones: '120×10 → 135×10', horizon: '2–3 años' },
-  { label: 'Sentadilla 120 ×20', lift: 'sentadilla', weight: 120, reps: 20, needed: 185, milestones: '100×10 → 100×20 → 120×10', horizon: '2–4 años' },
-  { label: 'Correr 20 km/h ×10 min', lift: 'carrera', reps: 1, milestones: '15 → 16 → 17 → 18 km/h ×10 min', horizon: '2+ años' },
+  { label: 'One arm pull-up ×1', lift: 'oap_negativa', reps: 1, milestones: 'negativa con banda 6 s → sin banda 5 s → 10 s → asistida ×3' },
+  { label: 'Dragon flag', lift: 'dragon_flag', reps: 1, milestones: 'nivel 5 = el primero · ×5 · ×20 dominado' },
+  { label: 'Curl mancuerna 20 kg ×20', lift: 'curl', reps: 20, milestones: '15 kg ×12 → 20 kg ×5 → ×10 → ×20' },
+  { label: 'Gripper 200 lb ×20', lift: 'gripper', reps: 20, milestones: '×3 → ×5 → ×10 → ×20' },
+  { label: 'Press militar 70 ×5', lift: 'militar', weight: 70, reps: 5, needed: 80, milestones: '60×5 → 65×5' },
+  { label: 'Hip thrust 200 ×10', lift: 'hip_thrust', weight: 200, reps: 10, needed: 265, milestones: '160×10 → 180×10' },
+  { label: 'Press banca 100 ×10', lift: 'banca', weight: 100, reps: 10, needed: 130, milestones: '80×10 → 90×10' },
+  { label: 'Peso muerto 150 ×10', lift: 'peso_muerto', weight: 150, reps: 10, needed: 195, milestones: '120×10 → 135×10' },
+  { label: 'Sentadilla 120 ×20', lift: 'sentadilla', weight: 120, reps: 20, needed: 185, milestones: '100×10 → 100×20 → 120×10' },
+  { label: 'Correr 20 km/h ×10 min', lift: 'carrera', reps: 1, milestones: '15 → 16 → 17 → 18 km/h ×10 min' },
 ]

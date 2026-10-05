@@ -34,10 +34,10 @@ describe('progresión por niveles', () => {
 
   it('en una escalera subir nivel cambia de nivel y de rango', () => {
     const oap = prescriptionOf({ ...SEED_SLOTS.find((s) => s.ladder === 'oap')!, id: 'x' })
-    const n = applyDecision({ ...oap, target: 5 }, 'subir_nivel')
+    const n = applyDecision({ ...oap, target: 6 }, 'subir_nivel')
     expect(n.level).toBe(2)
-    expect(n.targetMin).toBe(8)
-    expect(n.target).toBe(8)
+    expect(n.targetMin).toBe(2)
+    expect(n.target).toBe(2)
     expect(n.load).toBeNull()
   })
 
@@ -52,6 +52,21 @@ describe('progresión por niveles', () => {
     expect(suggestDecision(squat, [...sets(3, 5), { value: 4, load: null, rpe: 8, done: true }])).toBe('mantener')
     expect(suggestDecision(squat, sets(4, 5, 9))).toBe('mantener')
     expect(suggestDecision(squat, sets(2, 5))).toBe('mantener')
+  })
+
+  it('solo pesos que existen: mancuernas 15→20, barra de 5 en 5', () => {
+    const bulg = prescriptionOf({ ...SEED_SLOTS.find((s) => s.name === 'Búlgara')!, id: 'x' })
+    expect(bulg.load).toBe(20)
+    expect(applyDecision(bulg, 'mas_peso').load).toBe(25)
+    expect(applyDecision({ ...bulg, load: 12 }, 'mas_peso').load).toBe(15)
+    expect(applyDecision({ ...bulg, load: 15 }, 'menos_peso').load).toBe(12)
+    const bench = prescriptionOf({ ...SEED_SLOTS.find((s) => s.name === 'Press banca')!, id: 'x' })
+    expect(applyDecision(bench, 'subir_nivel').load).toBe(95)
+    for (const s of SEED_SLOTS) {
+      if (s.loadUnit === 'kg c/u') expect([2, 4, 5, 6, 8, 10, 12, 15, 20, 25, 30, 35, 40, 45, 50]).toContain(s.load)
+      if (s.loadUnit === 'kg' && (s.loadStep ?? 0) >= 5) expect(s.load! % 5).toBe(0)
+    }
+    expect(deloadPrescription({ ...bulg, load: 20 }).load).toBe(12)
   })
 
   it('descarga: 2 series al 65 % redondeado abajo', () => {
@@ -99,7 +114,7 @@ describe('formato', () => {
 describe('PRs', () => {
   it('1RM estimado y tabla de intentos', () => {
     expect(estimate1RM(100, 5, 8)).toBeCloseTo(123.3, 1)
-    expect(prPlan('sentadilla', 125).attempts[0]).toBe('117.5')
+    expect(prPlan('sentadilla', 125).attempts[0]).toBe('120')
   })
 })
 

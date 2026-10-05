@@ -1,4 +1,5 @@
 import { ladderLevel, ladderMax } from './ladders'
+import { floorLoad, nextLoad } from './weights'
 import type { Decision, Prescription, SetLog } from './types'
 
 export const DECISION_LABEL: Record<Decision, string> = {
@@ -55,21 +56,21 @@ export function applyDecision(p: Prescription, d: Decision): Prescription {
     case 'mas_descanso':
       return p.restS == null ? { ...p } : { ...p, restS: p.restS + restStep }
     case 'mas_peso':
-      return p.load == null ? { ...p } : { ...p, load: round(p.load + loadStep) }
+      return p.load == null ? { ...p } : { ...p, load: nextLoad(p.load, p.loadUnit, loadStep, 1) }
     case 'menos_peso':
-      return p.load == null ? { ...p } : { ...p, load: Math.max(0, round(p.load - loadStep)) }
+      return p.load == null ? { ...p } : { ...p, load: nextLoad(p.load, p.loadUnit, loadStep, -1) }
     case 'subir_nivel':
       if (isLadder(p)) {
         const lvl = Math.min(ladderMax(p.ladder), (p.level ?? 1) + 1)
         return resetToEasiest(withLadderLevel(p, lvl))
       }
-      return resetToEasiest(p.load == null ? { ...p } : { ...p, load: round(p.load + loadStep) })
+      return resetToEasiest(p.load == null ? { ...p } : { ...p, load: nextLoad(p.load, p.loadUnit, loadStep, 1) })
     case 'bajar_nivel':
       if (isLadder(p)) {
         const lvl = Math.max(1, (p.level ?? 1) - 1)
         return resetToEasiest(withLadderLevel(p, lvl))
       }
-      return resetToEasiest(p.load == null ? { ...p } : { ...p, load: Math.max(0, round(p.load - loadStep)) })
+      return resetToEasiest(p.load == null ? { ...p } : { ...p, load: nextLoad(p.load, p.loadUnit, loadStep, -1) })
   }
 }
 
@@ -102,13 +103,13 @@ export function suggestDecision(p: Prescription, sets: SetLog[]): Decision {
   return 'subir_nivel'
 }
 
-/** Descarga (§9): 2 series, ~65 % del peso (redondeado abajo a 2.5), reps al mínimo. */
+/** Descarga (§9): 2 series, ~65 % del peso (redondeado abajo a un peso que exista), reps al mínimo. */
 export function deloadPrescription(p: Prescription): Prescription {
   const scalesLoad = p.load != null && p.loadUnit != null && /kg|lb/.test(p.loadUnit)
   return {
     ...p,
     sets: Math.min(2, p.sets),
-    load: scalesLoad ? Math.floor((p.load! * 0.65) / 2.5) * 2.5 : p.load,
+    load: scalesLoad ? floorLoad(p.load! * 0.65, p.loadUnit, p.loadStep ?? 5) : p.load,
     target: p.targetMin ?? p.target,
   }
 }

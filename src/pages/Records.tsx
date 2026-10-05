@@ -48,10 +48,7 @@ export function Records() {
           const last = latest(g.lift)
           return (
             <div key={g.label} className="card stack" style={{ gap: 6 }}>
-              <div className="spread">
-                <strong>{g.label}</strong>
-                <span className="badge">{g.horizon}</span>
-              </div>
+              <strong>{g.label}</strong>
               {pct != null && (
                 <>
                   <div className="bar" role="progressbar" aria-valuenow={pct} aria-valuemin={0} aria-valuemax={100} aria-label={`Progreso hacia ${g.label}`}>

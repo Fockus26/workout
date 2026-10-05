@@ -10,9 +10,10 @@ export const LADDERS: Record<string, { label: string; levels: LadderLevel[] }> =
   oap: {
     label: 'One arm pull-up',
     levels: [
-      { name: 'Negativas a 1 brazo (bajar 2–5 s)', targetUnit: 's por negativa', targetMin: 2, targetMax: 5 },
-      { name: 'Negativas a 1 brazo (8–10 s)', targetUnit: 's por negativa', targetMin: 8, targetMax: 10 },
-      { name: 'Asistida con toalla + lock-off 5 s', targetUnit: 'reps/brazo', targetMin: 2, targetMax: 3 },
+      { name: 'Negativas a 1 brazo con banda (bajar 3–6 s)', targetUnit: 's por negativa', targetMin: 3, targetMax: 6 },
+      { name: 'Negativas a 1 brazo sin banda (bajar 2–5 s)', targetUnit: 's por negativa', targetMin: 2, targetMax: 5 },
+      { name: 'Negativas a 1 brazo sin banda (8–10 s)', targetUnit: 's por negativa', targetMin: 8, targetMax: 10 },
+      { name: 'Asistida con banda o toalla + lock-off 5 s', targetUnit: 'reps/brazo', targetMin: 2, targetMax: 3 },
       { name: 'Intentos de one arm pull-up', targetUnit: 'reps/brazo', targetMin: 1, targetMax: 3 },
     ],
   },

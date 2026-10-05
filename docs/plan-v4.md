@@ -1,6 +1,6 @@
 # Plan de Fuerza v4 — 6 días/semana
 
-**Perfil:** 62.85 kg · fuerza + reps altas en los básicos · one arm pull-up · gripper · dragon flag · carrera
+**Perfil:** 62.85 kg · fuerza + reps altas en los básicos · one arm pull-up · gripper · dragon flag · curl · carrera
 **Semana:** Lun/Mié/Vie pierna · Mar/Jue/Sáb tren superior · Dom descanso
 **Ciclo:** 8 semanas de bloque (2 "meses" de 4) → semana 9 descarga → semana 10 PR. Se recalibra al terminar cada mes.
 
@@ -43,21 +43,20 @@ Lectura: el bloque 2 funcionó muy bien en piernas (sentadilla, hip thrust, peso
 
 ## 3. Metas (actualizadas)
 
-"Dominar" = 20 reps. 1RM necesario estimado con Epley/RPE; los horizontes asumen ganar algo de peso corporal.
+"Dominar" = 20 reps. La columna "1RM que pide" es la fuerza que hace falta para la meta (estimada con Epley/RPE).
 
-| Meta | Hoy | 1RM que pide | Hito 1 | Hito 2 | Horizonte |
-|---|---|---|---|---|---|
-| One arm pull-up ×1 | negativa 1 s | — | negativa 5 s | asistida con toalla ×3 | 6–12 meses |
-| Dragon flag | negativas con rodillas | — | dragon flag completo ×1 | ×5 → ×20 | 3–6 meses el primero |
-| Gripper 200 lb ×20 | ×1 | — | ×5 | ×10 | 1.5–3 años |
-| Press militar 70 ×5 | 65 ×1 | ~80 | 60 ×5 | 65 ×5 | 9–18 meses |
-| Hip thrust 200 ×10 | 200 ×1 | ~265 | 160 ×10 | 180 ×10 | 1.5–2.5 años |
-| Press banca 100 ×10 | 100 ×1 | ~130 | 80 ×10 | 90 ×10 | 2–3 años |
-| Peso muerto 150 ×10 | 140 ×1 | ~195 | 120 ×10 | 135 ×10 | 2–3 años |
-| Sentadilla 120 ×20 | 125 ×1 | ~180–190 | 100 ×10 | 100 ×20 → 120 ×10 | 2–4 años |
-| Carrera 20 km/h ×10 min | 14 km/h ×10 min | — | 15 ×10 | 16 → 17 → 18 ×10 | 2+ años |
-
-**Sobre la carrera:** 20 km/h durante 10 min es ritmo 3:00/km (unos 3.3 km). Eso es nivel de corredor competitivo. Con 3 sesiones cortas por semana, llegar a 16–17 km/h ×10 min es realista. Para pasar de 18 km/h hará falta más volumen de carrera, y eso compite con la pierna. Lo revisamos cuando llegues a 17.
+| Meta | Hoy | 1RM que pide | Hito 1 | Hito 2 |
+|---|---|---|---|---|
+| One arm pull-up ×1 | negativa 1 s | — | negativa con banda 6 s → sin banda 5 s | asistida con banda o toalla ×3 |
+| Dragon flag | negativas con rodillas | — | dragon flag completo ×1 | ×5 → ×20 |
+| Gripper 200 lb ×20 | ×1 | — | ×5 | ×10 |
+| Curl mancuerna 20 kg ×20 | 20 kg ×1 · 15 kg ×8 | — | 15 kg ×12 → 20 kg ×5 | 20 kg ×10 |
+| Press militar 70 ×5 | 65 ×1 | ~80 | 60 ×5 | 65 ×5 |
+| Hip thrust 200 ×10 | 200 ×1 | ~265 | 160 ×10 | 180 ×10 |
+| Press banca 100 ×10 | 100 ×1 | ~130 | 80 ×10 | 90 ×10 |
+| Peso muerto 150 ×10 | 140 ×1 | ~195 | 120 ×10 | 135 ×10 |
+| Sentadilla 120 ×20 | 125 ×1 | ~180–190 | 100 ×10 | 100 ×20 → 120 ×10 |
+| Carrera 20 km/h ×10 min | 14 km/h ×10 min | — | 15 ×10 | 16 → 17 → 18 ×10 |
 
 **Prioridad:** 1) one arm pull-up y dragon flag (pesas poco: te conviene lograrlos antes de subir de peso corporal), 2) militar 70×5 (la meta de barra más cercana), 3) el resto.
 
@@ -81,7 +80,7 @@ Cada ejercicio tiene **peso**, **series**, un **rango de reps** (o de segundos o
 
 **Autorregulación:** si tienes 2 sesiones seguidas "decaído", o 2 básicos a RPE 9+ cuando tocaba 8, baja un 5 % esa semana. Si sigue igual, adelanta la descarga.
 
-**Saltos de peso:** banca, militar y dominada lastrada +2.5 kg · sentadilla, peso muerto y RDL +5 kg · hip thrust +10 kg · mancuernas al siguiente par.
+**Pesos disponibles:** el disco más pequeño es de 2.5 kg y en barra va siempre por pares, así que la barra sube de **5 en 5** (banca, militar, sentadilla, peso muerto, RDL; hip thrust +10). Con cinturón de lastre (dominada, fondos, dead hang) o en el remo en T, que se cargan de un solo lado, se puede subir 2.5. **Mancuernas:** 8, 10 y 12 kg y desde 15 kg de 5 en 5 (15, 20, 25…). La app solo te propone pesos que existen.
 
 ---
 
@@ -109,7 +108,7 @@ Formato: **peso · series×reps (rango) · descanso (rango)**. Lo que sale aquí
 | Principal | Sentadilla | 100 kg · 4×5 · 3 min | 4–6 | 3–4 min | 8 |
 | Principal | Hip thrust pesado | 150 kg · 3×6 · 3 min | 6–8 | 2–3 min | 8 |
 | Principal | Peso muerto rumano | 100 kg · 3×8 · 2:30 | 8–10 | 2–3 min | 7 |
-| Principal | Búlgara | 17.5 kg c/u · 3×8/pierna · 2 min | 8–10 | 90 s–2 min | 7–8 |
+| Principal | Búlgara | 20 kg c/u · 3×8/pierna · 2 min | 8–10 | 90 s–2 min | 7–8 |
 | Principal | Pantorrilla | 50 kg · 3×12 · 60 s | 12–15 | 60 s | 8 |
 | Abdomen | Leg raise colgado (nivel 3) | 3×8 · 90 s | 8–12 | 60–90 s | 8 |
 | Antebrazo | Farmer carry | 50 kg c/u · 3×1.5 vueltas · 90 s | 1.5–2.5 vueltas | 90 s | — |
@@ -119,9 +118,9 @@ Formato: **peso · series×reps (rango) · descanso (rango)**. Lo que sale aquí
 
 | Bloque | Ejercicio | Inicio | Rango reps | Rango descanso | RPE |
 |---|---|---|---|---|---|
-| Principal | Press banca | 87.5 kg · 4×4 · 4 min | 4–6 | 3–4 min | 8 |
+| Principal | Press banca | 90 kg · 4×4 · 4 min | 4–6 | 3–4 min | 8 |
 | Principal | Press militar mancuernas | 20 kg c/u · 3×8 · 2 min | 8–10 | 90 s–2 min | 7–8 |
-| Principal | Remo con barra | 50 kg · 4×8 · 2 min | 8–10 | 90 s–2 min | 7–8 |
+| Principal | Remo en T | 25 kg · 4×8 · 2 min | 8–10 | 90 s–2 min | 7–8 |
 | Principal | Fondos lastrados | 32.5 kg · 3×6 · 2:30 | 6–8 | 2–2:30 min | 8 |
 | Principal | Curl martillo | 12 kg c/u · 3×9 · 90 s | 8–10 | 90 s | 7–8 |
 | Abdomen | Dragon flag (nivel 1: negativas con rodillas, bajar 5 s) | 3×3 · 2 min | 3–5 | 90 s–2 min | 8 |
@@ -137,7 +136,6 @@ Formato: **peso · series×reps (rango) · descanso (rango)**. Lo que sale aquí
 | Principal | Hip thrust moderado | 130 kg · 3×8 · 3 min | 8–10 | 2–3 min | 7 |
 | Principal | Sentadilla frontal | 80 kg · 3×8 · 3 min | 6–8 | 2–3 min | 7 |
 | Principal | Aductores | 50 kg · 3×8 · 60 s | 8–12 | 60 s | 7 |
-| Abdomen | Hip flexor raise con banda (psoas) | banda negra ligera · 3×12/lado · 60 s | 12–15 | 60 s | 7 |
 | Abdomen | Hold semi leg raise | 3×30 s · 60 s | 25–40 s | 60 s | — |
 | Antebrazo | Suitcase carry | 25 kg · 3×1 ida/lado · 90 s | 1–2 idas | 90 s | — |
 | Cardio | Trote suave (opcional) | 10 km/h · 8 min | 8–10 min | — | 5 |
@@ -146,10 +144,10 @@ Formato: **peso · series×reps (rango) · descanso (rango)**. Lo que sale aquí
 
 | Bloque | Ejercicio | Inicio | Rango | Rango descanso | RPE |
 |---|---|---|---|---|---|
-| Principal | One arm pull-up (nivel 1: negativas) — al inicio, fresco | 3×2 por brazo · bajar 2 s · 2 min | 2–5 s por negativa | 2 min | — |
-| Principal | Press militar | 57.5 kg · 4×5 · 3 min | 4–6 | 3–4 min | 8 |
+| Principal | One arm pull-up (nivel 1: negativas con banda) — al inicio, fresco | 3×2 por brazo · bajar 3 s · 2 min | 3–6 s por negativa | 2 min | — |
+| Principal | Press militar | 60 kg · 4×4 · 3 min | 4–6 | 3–4 min | 8 |
 | Principal | Dominada lastrada | 22.5 kg · 4×4 · 3 min | 4–6 | 2–3 min | 8 |
-| Principal | Press banca cerrado | 72.5 kg · 3×6 · 3 min | 6–8 | 2–3 min | 7–8 |
+| Principal | Press banca cerrado | 75 kg · 3×6 · 3 min | 6–8 | 2–3 min | 7–8 |
 | Principal | Face pulls | 30 kg · 3×15 · 60 s | 12–15 | 60 s | 7 |
 | Principal | Bíceps + tríceps polea (superserie) | 40 / 45 kg · 3×10 · 90 s | 8–10 | 90 s | 8 |
 | Abdomen | Crunch en polea | 55 kg · 4×10 · 2 min | 8–10 | 90 s–2 min | 8 |
@@ -164,9 +162,8 @@ Formato: **peso · series×reps (rango) · descanso (rango)**. Lo que sale aquí
 | Principal | Hip thrust volumen | 130 kg · 3×10 · 3 min | 10–15 | 2–3 min | 7 |
 | Principal | Peso muerto volumen | 85 kg · 3×8 · 3 min | 8–10 | 2–3 min | 6–7 |
 | Abdomen | Leg raise colgado (nivel 3) | 3×10 · 90 s | 8–12 | 60–90 s | 8 |
-| Antebrazo | Wrist curl / reverse | 10 kg / 5 kg · 3×15 · 60 s | 15–20 | 60 s | 8 |
+| Antebrazo | Wrist curl / reverse (mancuerna) | 10 kg / 5 kg · 3×15 · 60 s | 15–20 | 60 s | 8 |
 | Antebrazo | Gripper 200 lb — cierres asistidos (pre-cierra con la otra mano a ~1 cm, termina con una) | 3×3 por mano · 90 s | 3–6 | 90 s | — |
-| Antebrazo | Extensión de dedos con banda | 2×20 · 30 s | 20–30 | 30 s | — |
 | Cardio | Trote suave | 10 km/h · 10 min | 10–12 min | — | 5 |
 
 ### Sábado — Superior C (volumen + one arm)
@@ -176,13 +173,14 @@ Formato: **peso · series×reps (rango) · descanso (rango)**. Lo que sale aquí
 | Principal | Archer pull-ups — al inicio | 3×6 por lado · 2 min | 6–8 | 2–3 min | 7 |
 | Principal | Press banca volumen | 80 kg · 3×8 · 2 min | 8–12 | 2–3 min | 7 |
 | Principal | Press militar volumen (barra) | 45 kg · 3×8 · 2 min | 8–12 | 2–3 min | 7 |
-| Principal | Zottman curl | 8 kg c/u · 3×12 · 90 s | 10–15 | 90 s | 7 |
+| Principal | Curl mancuerna de pie (misma forma del test) | 12 kg c/u · 3×10 · 90 s | 8–12 | 90 s–2 min | 8 |
 | Abdomen | Ab wheel (nivel 1: 3 casillas) | 3×8 · 2 min | 8–10 | 2 min | 8 |
 | Abdomen | Dragon flag — hold tuck arriba | 3×10 s · 90 s | 10–20 s | 90 s | — |
+| Antebrazo | Zottman curl | 8 kg c/u · 3×12 · 90 s | 10–15 | 90 s | 7 |
 | Antebrazo | Pinza | 15 kg · 3×20 s · 60 s | 20–30 s | 60 s | — |
 | Cardio | Intervalos largos | 16 km/h · 3×3 min · 2 min trote suave | 3–5 intervalos | 2 min | 8 |
 
-**Qué salió del plan v3 y por qué:** escaladora y bicicleta (ya no te interesan) · dead hang lastrado a 2 manos (lo cubre el one arm dead hang) · curl de pie y preacher (la meta de curl salió de la lista; quedan martillo, Zottman y la superserie) · knee raise del miércoles (el leg raise ya está lunes y viernes) · remo del sábado (lo reemplaza el archer, que es trabajo de one arm).
+**Qué salió del plan v3 y por qué:** escaladora y bicicleta (ya no te interesan) · dead hang lastrado a 2 manos (lo cubre el one arm dead hang) · preacher (el curl de pie del sábado trabaja la meta de curl) · knee raise del miércoles (el leg raise ya está lunes y viernes) · remo del sábado (lo reemplaza el archer, que es trabajo de one arm) · hip flexor raise y extensión de dedos con banda. El remo con barra del martes pasa a **remo en T**.
 
 ---
 
@@ -192,10 +190,13 @@ Formato: **peso · series×reps (rango) · descanso (rango)**. Lo que sale aquí
 
 | Nivel | Jueves (al inicio, fresco) | Sábado |
 |---|---|---|
-| **1 ← aquí** | Negativas a 1 brazo 3×2/brazo, de 2 s a 5 s | Archer 3×6–8/lado |
-| 2 | Negativas 3×2/brazo, 8–10 s | Archer 3×8/lado + pausa 2 s arriba |
-| 3 | Asistida con toalla 3×2–3/brazo + lock-off arriba 3×5 s | Archer 3×8/lado + pausa 3 s |
-| 4 | 3–5 intentos de one arm pull-up | Archer 3×8/lado |
+| **1 ← aquí** | Negativas a 1 brazo **con banda de resistencia** 3×2/brazo, de 3 s a 6 s | Archer 3×6–8/lado |
+| 2 | Negativas sin banda 3×2/brazo, de 2 s a 5 s | Archer 3×6–8/lado |
+| 3 | Negativas sin banda 3×2/brazo, 8–10 s | Archer 3×8/lado + pausa 2 s arriba |
+| 4 | Asistida con banda o toalla 3×2–3/brazo + lock-off arriba 3×5 s | Archer 3×8/lado + pausa 3 s |
+| 5 | 3–5 intentos de one arm pull-up | Archer 3×8/lado |
+
+**Con banda:** la banda va del pie (o la rodilla) a la barra y te quita peso al bajar. Empieza con la que te deje bajar 3 s controlados. Cuando bajes 6 s limpios en todas las series, pasa a una banda más fina y vuelve a 3 s. Cuando ya no necesites banda → nivel 2. Anota en la nota qué banda usaste. La banda también sirve en el nivel 4 (asistida).
 
 Subir de nivel: 2 sesiones seguidas completas y limpias en el tope del rango.
 
@@ -239,7 +240,7 @@ Hitos: ×3 → ×5 → ×10 → ×20. Si consigues un gripper de ~150 lb (o uno 
 | Jueves | 15 km/h · 6 min continuos | +1 min hasta 10 → +0.5 km/h y vuelves a 6 min |
 | Sábado | 16 km/h · 3×3 min · 2 min trote suave | +1 intervalo hasta 5 → +0.5 km/h y vuelves a 3 |
 
-Hitos: 15 km/h ×10 min (1–2 meses) → 16 → 17 → 18 → 20.
+Hitos: 15 km/h ×10 min → 16 → 17 → 18 → 20.
 
 ---
 
@@ -269,20 +270,21 @@ Pesos calculados con los PRs actuales. **La app los recalcula en la semana 8 con
 
 | Día | Ejercicio | Calentamiento | Int. 1 | Int. 2 | Int. 3 |
 |---|---|---|---|---|---|
-| Lun | Sentadilla | barra×10 · 60×5 · 80×3 · 100×2 · 110×1 | 117.5 | 127.5 | 132.5–135 |
-| Lun | Hip thrust | 60×8 · 100×5 · 140×3 · 170×1 | 185 | 202.5–205 | 210–215 |
-| Mar | Press banca | barra×10 · 50×5 · 70×3 · 85×1 | 92.5 | 100–102.5 | 105 |
+| Lun | Sentadilla | barra×10 · 65×5 · 80×3 · 100×2 · 110×1 | 120 | 125–130 | 130–135 |
+| Lun | Hip thrust | 60×8 · 100×5 · 140×3 · 170×1 | 185 | 200–205 | 210–215 |
+| Mar | Press banca | barra×10 · 50×5 · 65×3 · 80×2 · 90×1 | 95 | 100–105 | 105–110 |
 | Mar | Dominada lastrada | sin peso×5 · +10×3 · +20×1 · +27.5×1 | +32.5 | +37.5 | +40 |
 | Mié | Descanso activo | caminata y movilidad | | | |
-| Jue | Peso muerto | 60×5 · 90×3 · 110×2 · 125×1 | 132.5 | 142.5–145 | 150 |
-| Vie | Press militar | barra×8 · 35×5 · 45×3 · 55×1 | 60 | 65–67.5 | 70 |
+| Jue | Peso muerto | barra×10 · 70×5 · 90×3 · 110×2 · 125×1 | 130 | 140–145 | 145–150 |
+| Vie | Press militar | barra×10 · 35×5 · 40×3 · 50×2 · 55×1 | 60 | 65 | 70 |
 | Vie | Dominadas máx | 1 serie estricta, brazos extendidos → barbilla sobre la barra | | | |
 
 **Sábado — tests de habilidad (en este orden):**
 1. Negativa a un brazo: segundos controlados, 1 intento por brazo.
 2. Archer pull-ups: máximo de reps por lado.
 3. Gripper 200 lb: 3 intentos de máximo de reps (3 min de descanso). Solo cierres completos.
-4. Dragon flag: el nivel más alto que haces limpio y cuántas reps.
-5. Carrera: 10 min a la velocidad más alta que puedas sostener (anota km/h y distancia).
+4. Curl con mancuernas de 20 kg: calienta 10×10 y 15×3, luego máximo de reps de pie, ambas manos a la vez, sin balanceo.
+5. Dragon flag: el nivel más alto que haces limpio y cuántas reps.
+6. Carrera: 10 min a la velocidad más alta que puedas sostener (anota km/h y distancia).
 
 Opcional al final de cada día: máximo 2 accesorios ligeros (2 series, RPE 6), o a casa.

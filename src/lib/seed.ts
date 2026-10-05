@@ -60,18 +60,18 @@ const KMH = 'km/h'
 s(1, 'principal', 'Sentadilla', { kg: [100, KG, 5], vol: [4, 5, 4, 6], rest: [180, 180, 240], rpe: '8', lift: 'sentadilla' })
 s(1, 'principal', 'Hip thrust pesado', { kg: [150, KG, 10], vol: [3, 6, 6, 8], rest: [180, 120, 180], rpe: '8', lift: 'hip_thrust' })
 s(1, 'principal', 'Peso muerto rumano', { kg: [100, KG, 5], vol: [3, 8, 8, 10], rest: [150, 120, 180], rpe: '7' })
-s(1, 'principal', 'Búlgara', { kg: [17.5, CU, 2.5], vol: [3, 8, 8, 10, 'reps/pierna'], rest: [120, 90, 120], rpe: '7-8' })
+s(1, 'principal', 'Búlgara', { kg: [20, CU, 5], vol: [3, 8, 8, 10, 'reps/pierna'], rest: [120, 90, 120], rpe: '7-8' })
 s(1, 'principal', 'Pantorrilla', { kg: [50, KG, 5], vol: [3, 12, 12, 15], rest: [60, 60, 60], rpe: '8' })
 s(1, 'abdomen', 'Leg raise colgado', { ladder: 'leg_raise', level: 3, vol: [3, 8, 8, 12], rest: [90, 60, 90], rpe: '8' })
 s(1, 'antebrazo', 'Farmer carry', { kg: [50, CU, 5], vol: [3, 1.5, 1.5, 2.5, 'vueltas'], targetStep: 0.5, rest: [90, 90, 90] })
 s(1, 'cardio', 'Trote suave', { kg: [10, KMH, 0.5], vol: [1, 8, 8, 10, 'min'], optional: true, rpe: '5' })
 
 // ── Martes — Superior A (banca pesada)
-s(2, 'principal', 'Press banca', { kg: [87.5, KG, 2.5], vol: [4, 4, 4, 6], rest: [240, 180, 240], rpe: '8', lift: 'banca' })
-s(2, 'principal', 'Press militar mancuernas', { kg: [20, CU, 2.5], vol: [3, 8, 8, 10], rest: [120, 90, 120], rpe: '7-8' })
-s(2, 'principal', 'Remo con barra', { kg: [50, KG, 5], vol: [4, 8, 8, 10], rest: [120, 90, 120], rpe: '7-8' })
+s(2, 'principal', 'Press banca', { kg: [90, KG, 5], vol: [4, 4, 4, 6], rest: [240, 180, 240], rpe: '8', lift: 'banca' })
+s(2, 'principal', 'Press militar mancuernas', { kg: [20, CU, 5], vol: [3, 8, 8, 10], rest: [120, 90, 120], rpe: '7-8' })
+s(2, 'principal', 'Remo en T', { kg: [25, KG, 2.5], vol: [4, 8, 8, 10], rest: [120, 90, 120], rpe: '7-8', notes: 'Prioriza la técnica: pecho apoyado, sin tirón de espalda baja.' })
 s(2, 'principal', 'Fondos lastrados', { kg: [32.5, KG, 2.5], vol: [3, 6, 6, 8], rest: [150, 120, 150], rpe: '8' })
-s(2, 'principal', 'Curl martillo', { kg: [12, CU, 2], vol: [3, 9, 8, 10], rest: [90, 90, 90], rpe: '7-8' })
+s(2, 'principal', 'Curl martillo', { kg: [12, CU, 3], vol: [3, 9, 8, 10], rest: [90, 90, 90], rpe: '7-8' })
 s(2, 'abdomen', 'Dragon flag', { ladder: 'dragon_flag', level: 1, vol: [3, 3, 3, 5], rest: [120, 90, 120], rpe: '8', deload: 'skip', deloadAlt: 'Hollow body 2×20 s', lift: 'dragon_flag' })
 s(2, 'antebrazo', 'Gripper 200 lb — intentos de cierre', { vol: [5, 1, 1, 3, 'reps/mano'], rest: [120, 120, 120], notes: 'Progresión: 5×1 → 4×2 → 3×3 → 3×4 → 3×5 (ajusta las series con Personalizar).', deload: 'skip', deloadAlt: 'Sin gripper pesado esta semana', lift: 'gripper' })
 s(2, 'antebrazo', 'Gripper 200 lb — holds', { vol: [3, 10, 10, 20, 's/mano'], targetStep: 5, rest: [90, 90, 90], notes: 'Cierra con las dos manos y sostén cerrado con una. Al llegar a 20 s añade 3 negativas lentas (5 s) por mano.', deload: 'skip', deloadAlt: 'Sin gripper pesado esta semana' })
@@ -82,17 +82,16 @@ s(3, 'principal', 'Peso muerto', { kg: [120, KG, 5], vol: [4, 4, 3, 5], rest: [1
 s(3, 'principal', 'Hip thrust moderado', { kg: [130, KG, 10], vol: [3, 8, 8, 10], rest: [180, 120, 180], rpe: '7', lift: 'hip_thrust' })
 s(3, 'principal', 'Sentadilla frontal', { kg: [80, KG, 5], vol: [3, 8, 6, 8], rest: [180, 120, 180], rpe: '7' })
 s(3, 'principal', 'Aductores', { kg: [50, KG, 5], vol: [3, 8, 8, 12], rest: [60, 60, 60], rpe: '7' })
-s(3, 'abdomen', 'Hip flexor raise con banda', { vol: [3, 12, 12, 15, 'reps/lado'], rest: [60, 60, 60], rpe: '7', notes: 'Banda negra ligera. Al hacer 3×15 → banda más gruesa.' })
 s(3, 'abdomen', 'Hold semi leg raise', { vol: [3, 30, 25, 40, 's'], targetStep: 5, rest: [60, 60, 60] })
 s(3, 'antebrazo', 'Suitcase carry', { kg: [25, KG, 5], vol: [3, 1, 1, 2, 'idas/lado'], targetStep: 0.25, rest: [90, 90, 90] })
 s(3, 'cardio', 'Trote suave', { kg: [10, KMH, 0.5], vol: [1, 8, 8, 10, 'min'], optional: true, rpe: '5' })
 
 // ── Jueves — Superior B (militar pesado + one arm)
-s(4, 'principal', 'One arm pull-up', { ladder: 'oap', level: 1, vol: [3, 2, 2, 5], rest: [120, 120, 120], notes: '2 negativas por brazo en cada serie. Al inicio, fresco. Dolor en el codo interno → bajar nivel 1 semana.', deload: 'skip', deloadAlt: 'Sin negativas esta semana', lift: 'oap_negativa' })
-s(4, 'principal', 'Press militar', { kg: [57.5, KG, 2.5], vol: [4, 5, 4, 6], rest: [180, 180, 240], rpe: '8', lift: 'militar' })
+s(4, 'principal', 'One arm pull-up', { ladder: 'oap', level: 1, vol: [3, 3, 3, 6], rest: [120, 120, 120], notes: '2 negativas por brazo en cada serie, al inicio y fresco. Con banda: anota en la nota cuál usaste; al bajar 6 s limpios, banda más fina. Sin banda → subir nivel. Dolor en el codo interno → bajar nivel 1 semana.', deload: 'skip', deloadAlt: 'Sin negativas esta semana', lift: 'oap_negativa' })
+s(4, 'principal', 'Press militar', { kg: [60, KG, 5], vol: [4, 4, 4, 6], rest: [180, 180, 240], rpe: '8', lift: 'militar' })
 s(4, 'principal', 'Dominada lastrada', { kg: [22.5, KG, 2.5], vol: [4, 4, 4, 6], rest: [180, 120, 180], rpe: '8', lift: 'dominada_lastrada' })
-s(4, 'principal', 'Press banca cerrado', { kg: [72.5, KG, 2.5], vol: [3, 6, 6, 8], rest: [180, 120, 180], rpe: '7-8' })
-s(4, 'principal', 'Face pulls', { kg: [30, KG, 2.5], vol: [3, 15, 12, 15], rest: [60, 60, 60], rpe: '7' })
+s(4, 'principal', 'Press banca cerrado', { kg: [75, KG, 5], vol: [3, 6, 6, 8], rest: [180, 120, 180], rpe: '7-8' })
+s(4, 'principal', 'Face pulls', { kg: [30, KG, 5], vol: [3, 15, 12, 15], rest: [60, 60, 60], rpe: '7' })
 s(4, 'principal', 'Bíceps + tríceps polea', { kg: [40, KG, 5], vol: [3, 10, 8, 10], rest: [90, 90, 90], rpe: '8', notes: 'Superserie. Tríceps 45 kg.' })
 s(4, 'abdomen', 'Crunch en polea', { kg: [55, KG, 5], vol: [4, 10, 8, 10], rest: [120, 90, 120], rpe: '8' })
 s(4, 'antebrazo', 'One arm dead hang', { kg: [10, KG, 2.5], vol: [3, 30, 20, 40, 's/brazo'], targetStep: 5, rest: [90, 90, 90] })
@@ -103,18 +102,18 @@ s(5, 'principal', 'Sentadilla volumen', { kg: [95, KG, 5], vol: [3, 8, 8, 12], r
 s(5, 'principal', 'Hip thrust volumen', { kg: [130, KG, 10], vol: [3, 10, 10, 15], rest: [180, 120, 180], rpe: '7', lift: 'hip_thrust' })
 s(5, 'principal', 'Peso muerto volumen', { kg: [85, KG, 5], vol: [3, 8, 8, 10], rest: [180, 120, 180], rpe: '6-7', lift: 'peso_muerto' })
 s(5, 'abdomen', 'Leg raise colgado', { ladder: 'leg_raise', level: 3, vol: [3, 10, 8, 12], rest: [90, 60, 90], rpe: '8' })
-s(5, 'antebrazo', 'Wrist curl / reverse', { kg: [10, KG, 2.5], vol: [3, 15, 15, 20], rest: [60, 60, 60], rpe: '8', notes: 'Reverse con 5 kg.' })
+s(5, 'antebrazo', 'Wrist curl / reverse', { kg: [10, CU, 2], vol: [3, 15, 15, 20], rest: [60, 60, 60], rpe: '8', notes: 'Reverse con 5 kg.' })
 s(5, 'antebrazo', 'Gripper 200 lb — cierres asistidos', { vol: [3, 3, 3, 6, 'reps/mano'], rest: [90, 90, 90], notes: 'Pre-cierra con la otra mano hasta ~1 cm y termina con una. Al hacer 3×6, pre-cierra menos.', deload: 'skip', deloadAlt: 'Sin gripper esta semana' })
-s(5, 'antebrazo', 'Extensión de dedos con banda', { vol: [2, 20, 20, 30], rest: [30, 30, 30] })
 s(5, 'cardio', 'Trote suave', { kg: [10, KMH, 0.5], vol: [1, 10, 10, 12, 'min'], rpe: '5' })
 
 // ── Sábado — Superior C (volumen + one arm)
 s(6, 'principal', 'Archer pull-ups', { ladder: 'archer', level: 1, vol: [3, 6, 6, 8], rest: [120, 120, 180], rpe: '7', lift: 'archer' })
-s(6, 'principal', 'Press banca volumen', { kg: [80, KG, 2.5], vol: [3, 8, 8, 12], rest: [120, 120, 180], rpe: '7', lift: 'banca' })
-s(6, 'principal', 'Press militar volumen', { kg: [45, KG, 2.5], vol: [3, 8, 8, 12], rest: [120, 120, 180], rpe: '7', lift: 'militar' })
-s(6, 'principal', 'Zottman curl', { kg: [8, CU, 2], vol: [3, 12, 10, 15], rest: [90, 90, 90], rpe: '7' })
+s(6, 'principal', 'Press banca volumen', { kg: [80, KG, 5], vol: [3, 8, 8, 12], rest: [120, 120, 180], rpe: '7', lift: 'banca' })
+s(6, 'principal', 'Press militar volumen', { kg: [45, KG, 5], vol: [3, 8, 8, 12], rest: [120, 120, 180], rpe: '7', lift: 'militar' })
+s(6, 'principal', 'Curl mancuerna de pie', { kg: [12, CU, 3], vol: [3, 10, 8, 12], rest: [90, 90, 120], rpe: '8', lift: 'curl', notes: 'Misma forma del test: de pie, ambas manos a la vez, sin balanceo. Meta: 20 kg ×20.' })
 s(6, 'abdomen', 'Ab wheel', { ladder: 'ab_wheel', level: 1, vol: [3, 8, 8, 10], rest: [120, 120, 120], rpe: '8', notes: '3 casillas. Añade casillas solo si la espalda baja no se arquea.' })
 s(6, 'abdomen', 'Dragon flag — hold tuck arriba', { vol: [3, 10, 10, 20, 's'], targetStep: 5, rest: [90, 90, 90], deload: 'skip', deloadAlt: 'Hollow body 2×20 s' })
+s(6, 'antebrazo', 'Zottman curl', { kg: [8, CU, 2], vol: [3, 12, 10, 15], rest: [90, 90, 90], rpe: '7' })
 s(6, 'antebrazo', 'Pinza', { kg: [15, KG, 5], vol: [3, 20, 20, 30, 's'], targetStep: 5, rest: [60, 60, 60], notes: 'Al pasar de 30 s, disco más pesado.' })
 s(6, 'cardio', 'Intervalos largos', { kg: [16, KMH, 0.5], vol: [1, 3, 3, 5, 'intervalos de 3 min'], rest: [120, 120, 120], rpe: '8', notes: 'Recuperación: trote suave.', deload: 'skip', deloadAlt: 'Trote suave 10 min' })
 
@@ -134,7 +133,7 @@ export const SEED_RECORDS: Omit<RecordRow, 'id'>[] = [
   { date: '2026-09-29', lift: 'banca', value: 100, unit: 'kg', reps: 1, notes: null },
   { date: '2026-10-01', lift: 'oap_negativa', value: 1, unit: 's', reps: 1, notes: null },
   { date: '2026-10-01', lift: 'archer', value: 8, unit: 'reps/lado', reps: 1, notes: 'barbilla hasta la muñeca' },
-  { date: '2026-10-01', lift: 'curl', value: 1, unit: 'reps', reps: 1, notes: '20 kg ×1 · 15 kg ×8' },
+  { date: '2026-10-01', lift: 'curl', value: 1, unit: 'reps con 20 kg', reps: 1, notes: 'con 15 kg: 8 reps' },
   { date: '2026-10-01', lift: 'carrera', value: 15, unit: 'km/h', reps: 1, notes: '5 min a 15 km/h + 2 min a 17 km/h · antes 14 km/h ×10 min' },
   { date: '2026-10-02', lift: 'peso_muerto', value: 140, unit: 'kg', reps: 1, notes: null },
   { date: '2026-10-03', lift: 'militar', value: 65, unit: 'kg', reps: 1, notes: null },
